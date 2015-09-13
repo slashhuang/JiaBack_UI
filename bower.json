@@ -1,15 +1,29 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "jiaxin-back",
+  "description": "加信前端组件",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://git.oschina.net/aesop/jiaxin-back.git",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "angular": "~1.4.0",
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
     "html5-boilerplate": "~5.2.0"
-  }
+  },
+  "authors": [
+    "slashhuang <627284482@qq.com>"
+  ],
+  "keywords": [
+    "加信",
+    "后端"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
 }

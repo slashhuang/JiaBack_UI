@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="user-title">
+    <h1>消息管理</h1>
+</div>
+<div class="user-Info">
+    <ul class="common-list">
+        <li>
+            <span style="width:3%">编号</span>
+            <span  style="width:15%">标签</span>
+            <span  style="width:25%">文字</span>
+            <span  style="width:4%">图数</span>
+            <span  style="width:15%">位置</span>
+            <span  style="width:12%">创建时间</span>
+            <span  style="width:12%">更新时间</span>
+            <span  style="width:10%">操作</span>
+        </li>
+        <li ng-repeat="message in messagesData">
+            <span style="width:3%">{{message.id}}</span>
+            <span  style="width:15%">{{message.tags}}</span>
+            <span  style="width:25%">{{message.description}}</span>
+            <span  style="width:4%">{{message.imgNum}}</span>
+            <span  style="width:15%">{{message.location}}</span>
+            <span  style="width:12%">{{message.createTime}}</span>
+            <span  style="width:12%">{{message.refreshTime}}</span>
+            <span  style="width:10%">评论|编辑|删除</span>
+        </li>
+    </ul>
+</div>

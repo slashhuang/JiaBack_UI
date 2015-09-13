@@ -19,13 +19,12 @@
         <span>项目公告:</span>
         <b>操作注意事项：操作时请认真核查操作的对象，防止误操作.</b>
     </div>
-    <div class="back-header-nav">
+    <div class="back-header-nav" ng-controller="navCtrl">
         <dl class="back-header-leftSide">
-            <dd>用户管理</dd>
-            <dd>注册管理</dd>
-            <dd>群组列表</dd>
-            <dd>推送信息列表</dd>
-            <dd>活动信息列表</dd>
+            <dd ng-click="clicked=0" ng-class="changeNav(0)"><a href="#/users">用户管理</a></dd>
+            <dd  ng-click="clicked=1" ng-class="changeNav(1)"><a href="#/groups">群组列表</a></dd>
+            <dd  ng-click="clicked=2" ng-class="changeNav(2)"><a href="#/messages">推送信息列表</a></dd>
+            <dd  ng-click="clicked=3" ng-class="changeNav(3)"><a href="#/activity">活动信息列表</a></dd>
         </dl>
     </div>
 </div>

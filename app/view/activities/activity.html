@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="user-title">
+    <h1>活动信息</h1>
+</div>
+<div class="user-Info">
+    <ul class="common-list">
+        <li>
+            <span style="width:3%">编号</span>
+            <span style="width:10%">活动名称</span>
+            <span  style="width:12%">开始时间</span>
+            <span  style="width:12%">结束时间</span>
+            <span  style="width:10%">举办地点</span>
+            <span  style="width:8%">发起者</span>
+            <span  style="width:13%">创建时间</span>
+            <span  style="width:13%">更新时间</span>
+            <span  style="width:15%">操作</span>
+        </li>
+        <li ng-repeat="activity in activityData">
+            <span style="width:3%">{{activity.id}}</span>
+            <span style="width:10%">{{activity.name}}</span>
+            <span  style="width:12%">{{activity.startTime}}</span>
+            <span  style="width:12%">{{activity.endTime}}</span>
+            <span  style="width:10%">{{activity.location}}</span>
+            <span  style="width:8%">{{activity.initiator}}</span>
+            <span  style="width:13%">{{activity.createTime}}</span>
+            <span  style="width:13%">{{activity.refreshTime}}</span>
+            <span  style="width:15%"> 编辑 | 删除</span>
+        </li>
+    </ul>
+</div>

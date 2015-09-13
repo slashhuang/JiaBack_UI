@@ -5,10 +5,18 @@ define([], function () {
         $routeProvider.
             when("/users",{
                 templateUrl: '/view/users/users.html',
-                controller: 'userCtrl'})
-            .when("/regUsers",{
-                templateUrl: '/view/users/users.html',
-                controller: 'regUserCtrl'});
+                controller: 'usersCtrl'})
+            .when("/messages",{
+                templateUrl: '/view/messages/messages.html',
+                controller: 'messagesCtrl'
+            })
+            .when("/groups",{
+                templateUrl: '/view/groups/groups.html',
+                controller: 'groupsCtrl'})
+            .when("/activity",{
+                templateUrl: '/view/activities/activity.html',
+                controller: 'activityCtrl'});
+
         //default的情况
         $routeProvider.
             otherwise({

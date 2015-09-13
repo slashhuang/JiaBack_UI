@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="user-title">
+    <h1>群组管理</h1>
+</div>
+<div class="user-Info">
+    <ul class="common-list">
+        <li>
+            <span style="width:5%">组ID</span>
+            <span style="width:10%">名称</span>
+            <span  style="width:10%">描述</span>
+            <span  style="width:5%">容量）</span>
+            <span  style="width:10%">目前人数</span>
+            <span  style="width:15%">位置</span>
+            <span  style="width:13%">创建时间</span>
+            <span  style="width:13%">更新时间</span>
+            <span  style="width:15%">操作</span>
+        </li>
+        <li ng-repeat="group in groupData">
+            <span style="width:5%">{{group.id}}</span>
+            <span style="width:10%">{{group.name}}</span>
+            <span  style="width:10%">{{group.description}}</span>
+            <span  style="width:5%">{{group.capacity}}</span>
+            <span  style="width:10%">{{group.inNum}}</span>
+            <span  style="width:15%">{{group.location}}</span>
+            <span  style="width:13%">{{group.createTime}}</span>
+            <span  style="width:13%">{{group.refreshTime}}</span>
+            <span  style="width:15%">好友管理 | 编辑 | 删除</span>
+        </li>
+    </ul>
+</div>

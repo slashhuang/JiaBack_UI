@@ -1,7 +1,7 @@
 /**
  * Created by slashhuang on 15/8/21.
  */
-require.config({
+requirejs.config({
     baseUrl:"/js",
     paths:{
         "angular":"lib/angular",

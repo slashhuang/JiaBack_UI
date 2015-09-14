@@ -15,7 +15,13 @@
   <script src="/js/require.js"></script>
   <script src="/js/config/requireConfig.js"></script>
   <script>
-    require(["app"])
+    requirejs(["app"])
+  </script>
+  <script>
+    var socket = io.connect("/");
+    socket.on("connected", function () {
+      alert("connected to jiaxin")
+    })
   </script>
   <!--浏览器过时的显示更换-->
   <!--[if lt IE 7]>

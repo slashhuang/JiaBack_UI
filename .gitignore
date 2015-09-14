@@ -12,10 +12,10 @@ logs
 results
 
 npm-debug.log
-#node_modules
+node_modules
 bower
 test
- ../.idea/
+.idea/
 bower_components/
 
 e2e-tests

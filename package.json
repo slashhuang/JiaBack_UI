@@ -1,0 +1,26 @@
+{
+  "name": "jiaxin-back",
+  "version": "1.0.0",
+  "description": "jiaxin back control",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "nw": "^0.12.3",
+    "socket.io": "^1.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/aesop/jiaxin-back.git"
+  },
+  "keywords": [
+    "jiaxin",
+    "back"
+  ],
+  "author": "slashhuang",
+  "license": "ISC"
+}
